@@ -1,0 +1,3 @@
+add_executable(binary_search binary_search.cpp)
+add_executable(remove_element remove_element.cpp)
+add_executable(square_of_ordered_array square_of_ordered_array.cpp)

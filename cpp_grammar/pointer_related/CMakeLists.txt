@@ -1,0 +1,5 @@
+add_executable(const_ptr const_ptr.cpp)
+
+add_executable(pointer_definition pointer_definition.cpp)
+
+add_executable(wild_and_dangling_ptr wild_and_dangling_ptr.cpp)
