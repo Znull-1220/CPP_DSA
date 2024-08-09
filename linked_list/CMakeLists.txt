@@ -1,0 +1,1 @@
+add_executable(definition definition.cpp)
