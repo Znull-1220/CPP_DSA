@@ -45,6 +45,15 @@ public:
     }
 
 
+    ListNode* getHead() {
+        return _dummyHead->next;
+    }
+
+    void changeHead(ListNode* newHead) {
+        _dummyHead->next = newHead;
+    }
+
+
     void addAtHead(int val) {
         ListNode* newHead = new ListNode(val);
         newHead->next = _dummyHead->next;
@@ -55,9 +64,13 @@ public:
     void addAtTail(int val) {
         ListNode* newTail = new ListNode(val);
         ListNode* cur = _dummyHead;
-        while (_size--) {
+
+        // CAUTION: while loop will change the value of the condition variable
+        // namely _size which I used formerly
+        while (cur->next != nullptr) {
             cur = cur->next;
         }
+
         cur->next = newTail;
         _size++;
     }
@@ -106,10 +119,12 @@ public:
         std::cout << std::endl;
     }
 
-
 private:
     ListNode* _dummyHead;
     int  _size;
 };
 
+// 类的static field必须在类外初始化
+//::ListNode* LinkedList::_dummyHead = nullptr;
+//int LinkedList::_size = 0;
 #endif //LINKEDLIST_H
