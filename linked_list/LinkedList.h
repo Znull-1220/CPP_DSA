@@ -75,6 +75,22 @@ public:
         _size++;
     }
 
+
+    /**
+     * 指定节点ptr来在末尾追加节点.
+     * @param node 插入节点指针
+     */
+    void addAtTail(ListNode* node) {
+        ListNode* cur = _dummyHead;
+        while (cur->next != nullptr) {
+            cur = cur->next;
+        }
+
+        cur->next = node;
+        _size++;
+    }
+
+
     void addAtIndex(int index, int val) {
         if(index < 0 || index > _size) {
             return;
