@@ -1,0 +1,3 @@
+add_executable(valid_anagram valid_anagram.cpp)
+add_executable(intersection_of_two_arrays intersection_of_two_arrays.cpp)
+add_executable(two_sum two_sum.cpp)
