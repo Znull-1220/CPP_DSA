@@ -1,3 +1,7 @@
 add_executable(valid_anagram valid_anagram.cpp)
 add_executable(intersection_of_two_arrays intersection_of_two_arrays.cpp)
 add_executable(two_sum two_sum.cpp)
+add_executable(happy_number happy_number.cpp)
+add_executable(4sum_ii 4sum_ii.cpp)
+add_executable(ransom_note ransom_note.cpp)
+add_executable(3sum 3sum.cpp)
