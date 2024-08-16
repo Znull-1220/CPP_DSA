@@ -21,8 +21,12 @@ using namespace std;
 
 class Solution {
 public:
+    /**
+     * 双指针法
+     */
     vector<vector<int>> threeSum(vector<int>& nums) {
         vector<vector<int>> result;
+        // 从小到大排序
         sort(nums.begin(), nums.end());
         // 找出a + b + c = 0
         // a = nums[i], b = nums[left], c = nums[right]
@@ -37,7 +41,7 @@ public:
                 continue;
             }
             */
-            // 正确去重a方法
+            // 正确去重a方法，等于是在上一轮循环考虑当前a 两个元素相等这种情况
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
@@ -49,11 +53,15 @@ public:
                 while (right > left && nums[right] == nums[right - 1]) right--;
                 while (right > left && nums[left] == nums[left + 1]) left++;
                 */
+
+                // 大于0说明数字大了，右边right--，小于0说明数字小了，左边left++
                 if (nums[i] + nums[left] + nums[right] > 0) right--;
                 else if (nums[i] + nums[left] + nums[right] < 0) left++;
                 else {
+                    // 这是push一个vector到二位vector
                     result.push_back(vector<int>{nums[i], nums[left], nums[right]});
                     // 去重逻辑应该放在找到一个三元组之后，对b 和 c去重
+                    // 为什么不同时++/--，是因为一个数字变动后不可能再找到相同的三元组了，除非另一个数字也变动
                     while (right > left && nums[right] == nums[right - 1]) right--;
                     while (right > left && nums[left] == nums[left + 1]) left++;
 
