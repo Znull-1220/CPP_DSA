@@ -1,2 +1,6 @@
 add_executable(reverse_string reverse_string.cpp)
 add_executable(reverse_string_ii reverse_string_ii.cpp)
+add_executable(reverse_words_in_a_string reverse_words_in_a_string.cpp)
+add_executable(right_handed_string right_handed_string.cpp)
+add_executable(replace_numbers replace_numbers.cpp)
+add_executable(find_the_index_of_the_first_occurrence_in_a_string.cpp find_the_index_of_the_first_occurrence_in_a_string.cpp)
