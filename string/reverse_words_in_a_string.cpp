@@ -34,6 +34,7 @@ public:
     /**
      * 移除多余字符串 双指针法
      * 和array-移除元素中的思路一致，只不过这里是移除空格
+     * 这里用earse fun来移除空格并不好，因为erase会导致后面的元素移动，时间复杂度是O(n)
      * @param s input string
      */
     void removeExtraSpaces(string &s) {
