@@ -14,5 +14,7 @@ add_subdirectory(string)
 
 add_subdirectory(binary_tree)
 
+add_subdirectory(dynamic_programming)
+
 
 
