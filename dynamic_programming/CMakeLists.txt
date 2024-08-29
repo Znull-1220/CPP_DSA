@@ -1,2 +1,6 @@
 add_executable(climbing_stairs climbing_stairs.cpp)
 add_executable(min_cost_climbing_stairs min_cost_climbing_stairs.cpp)
+add_executable(unique_paths unique_paths.cpp)
+add_executable(unique_paths_ii unique_paths_ii.cpp)
+add_executable(integer_break integer_break.cpp)
+add_executable(unique_binary_search_trees unique_binary_search_trees.cpp)
