@@ -30,6 +30,7 @@ private:
         // for(int i = startIndex; i <= n; i++) {
         // pruning 当for循环选择的起始位置之后的元素个数已经不足我们需要的元素个数了，那么就没有必要搜索了
         // 例如 n=4 k=3 当path.size == 0时，n - (k - path.size()) + 1 = 2 从2开始[2 3 4]是合理的
+        // 这个边界条件举两个例子就没有问题了
         for(int i = startIndex; i <= n - (k - path.size()) + 1; i++) {
             path.push_back(i);  // 将当前元素添加到路径 尝试当前路径
             backtracking(n, k, i + 1);  // 递归
