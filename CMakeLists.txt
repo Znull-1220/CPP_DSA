@@ -16,5 +16,7 @@ add_subdirectory(binary_tree)
 
 add_subdirectory(dynamic_programming)
 
+add_subdirectory(backtracking)
+
 
 
