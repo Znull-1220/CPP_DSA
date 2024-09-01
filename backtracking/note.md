@@ -15,18 +15,29 @@
 
 可以采用约束条件来pruning.
 
+总结来说，其实就是遍历决策树的过程，每一个叶子节点都可能是一个合法决策，将整棵树
+遍历一遍，将所有合法的叶子节点都找出来，就是所有的解
+
 ## 常见问题
 
 - 组合问题：N个数里面按一定规则找出k个数的集合
+
+  注意规避重复的元素 *startIndex* & *pruning*
+
 - 切割问题：一个字符串按一定规则有几种切割方式
 - 子集问题：一个N个数的集合里有多少符合条件的子集
 - 排列问题：N个数按一定规则全排列，有几种排列方式
-- 棋盘问题：N皇后，解数独等等
+![full_arrange.jpg](pics/full_arrange.jpg)
+显然可以抽象为树
+- 棋盘问题：N皇后，解数独等等 
+
+  同样是将棋盘上的每个选择抽象为树的节点
 
 组合无序，排列有序
 
 所有回溯问题都可以抽象为树形结构(高度有限N叉树) 递归次数有限->高度有限；集合大小决定树宽度
 ## template
+template @代码随想录
 ```
 // arg always include path, choices 路径&选择列表
 void backtracking(args) {
@@ -43,5 +54,8 @@ void backtracking(args) {
         回溯，撤销选择;
     }
 }
-
 ```
+template by labuladong
+![template.jpg](pics/template.jpg)
+
+不要将回溯隐藏到递归，这样比较直观

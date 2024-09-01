@@ -1,1 +1,8 @@
 add_executable(combinations combinations.cpp)
+add_executable(combination_sum_iii combination_sum_iii.cpp)
+add_executable(letter_combinations_of_a_phone_number letter_combinations_of_a_phone_number.cpp)
+add_executable(combination_sum combination_sum.cpp)
+add_executable(combination_sum_ii combination_sum_ii.cpp)
+add_executable(palindrome_partitioning palindrome_partitioning.cpp)
+add_executable(restore_ip_addresses restore_ip_addresses.cpp)
+add_executable(subsets subsets.cpp)
