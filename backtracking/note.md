@@ -25,10 +25,17 @@
   注意规避重复的元素 *startIndex* & *pruning*
 
 - 切割问题：一个字符串按一定规则有几种切割方式
+  - 不同的切割方式作为不同节点
 - 子集问题：一个N个数的集合里有多少符合条件的子集
-- 排列问题：N个数按一定规则全排列，有几种排列方式
-![full_arrange.jpg](pics/full_arrange.jpg)
-显然可以抽象为树
+  - 其实就是组合问题的一个变形，不只收集叶子节点，而是收集所有节点
+- 排列问题：N个数按一定规则全排列，有几种排列方式 显然可以抽象为树
+![full_arrange.jpg](pics/permutations.jpg)
+  - 排列问题每层都是从0开始遍历 而不是startIndex
+  - 需要一个used数组来记录已经选择的元素 保证排列内部的元素不重复
+
+
+  
+
 - 棋盘问题：N皇后，解数独等等 
 
   同样是将棋盘上的每个选择抽象为树的节点
@@ -56,6 +63,7 @@ void backtracking(args) {
 }
 ```
 template by labuladong
+
 ![template.jpg](pics/template.jpg)
 
 不要将回溯隐藏到递归，这样比较直观
