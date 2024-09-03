@@ -42,6 +42,8 @@ private:
     // 不需要result来收集了 找到一个就OK，而且也是直接在board上用引用做的
     bool backtracking(vector<vector<char>>& board) {
         // 填满自然就终止 不需要终止条件
+        // 二维递归，一个遍历行 一个遍历列;
+        // 我的理解就是对每一个位置不断尝试 每一个位置都是一棵树 所以不需要传入row/col
         for(int row = 0; row < board.size(); row++) {
             for(int col = 0; col < board[0].size(); col++) {
                 if(board[row][col] != '.') {    // 如果是数字就跳过
