@@ -1,0 +1,3 @@
+add_executable(assign_cookies assign_cookies.cpp)
+add_executable(wiggle_subsequence wiggle_subsequence.cpp)
+add_executable(maximum_subarray maximum_subarray.cpp)
