@@ -1,0 +1,6 @@
+add_executable(all_paths_from_source_to_target all_paths_from_source_to_target.cpp)
+add_executable(number_of_islands_dfs number_of_islands_dfs.cpp)
+add_executable(number_of_islands_bfs number_of_islands_bfs.cpp)
+add_executable(total_squares_of_isolated_islands total_squares_of_isolated_islands.cpp)
+add_executable(waterflow_problem waterflow_problem.cpp)
+add_executable(construct_largest_island construct_largest_island.cpp)
