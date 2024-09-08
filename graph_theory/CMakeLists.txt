@@ -9,3 +9,5 @@ add_executable(full_accessibility_of_directed_graphs full_accessibility_of_direc
 add_executable(find_a_existing_path find_a_existing_path.cpp)
 add_executable(redundant_connection redundant_connection.cpp)
 add_executable(redundant_connection_ii redundant_connection_ii.cpp)
+add_executable(MST_prim MST_prim.cpp)
+add_executable(MST_kruskal MST_kruskal.cpp)
