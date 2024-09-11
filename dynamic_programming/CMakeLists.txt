@@ -17,6 +17,9 @@ add_executable(climbing_stairs_ii climbing_stairs_ii.cpp)
 add_executable(coin_change coin_change.cpp)
 add_executable(perfect_squares perfect_squares.cpp)
 add_executable(word_break word_break.cpp)
+add_executable(house_robber house_robber.cpp)
+add_executable(house_robber_ii house_robber_ii.cpp)
+add_executable(house_robber_iii house_robber_iii.cpp)
 
 
 add_executable(longest_increasing_subsequence longest_increasing_subsequence.cpp)
