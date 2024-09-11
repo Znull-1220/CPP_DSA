@@ -13,4 +13,4 @@ add_subdirectory(backtracking)
 add_subdirectory(greedy_algorithm)
 add_subdirectory(graph_theory)
 
-add_subdirectory(REAL-PAPER-QUESTIONS)
+add_subdirectory(REAL-QUESTIONS)

@@ -85,3 +85,25 @@ dp[i][j] = dp[i - 1][j] + dp[i][j - weight[i]]
 ### 多重背包
 多种物品，每个物品有有限个。做法就是将多重背包转化为0-1背包，将每个物品拆分成多个物品，然后使用0-1背包的方法。
 
+## 经典问题
+
+### 打家劫舍
+
+### 股票问题
+
+### 子序列问题
+子序列问题一般最好用dp[i][j]去表示两个字符串的第i - 1和第j - 1个字符结尾的子序列，这样可以避免初始化，代码实现简单。
+- [LC #300.最长递增子序列](./longest_increasing_subsequence.cpp)
+- [LC #674.最长连续递增序列](./longest_continuous_increasing_subsequence.cpp)
+- [LC #718.最长重复子数组](./maximum_length_of_repeated_subarray.cpp)
+- [1143.最长公共子序列](./longest_common_subsequence.cpp); 这道题和[LC #1035.不相交的线不相交的线](https://leetcode.cn/problems/uncrossed-lines/description/)
+本质上是一样的，不相交的线其实就是不改变字符在字符串中的相对位置才可以连线，就是求最长公共子序列。
+- [LC #53.最大子序和](./maximum_subarray_dp.cpp),贪心也可以做[LC #53.最大子序和-贪心解法](../greedy_algorithm/maximum_subarray.cpp). DP解法简单直观！
+#### 编辑距离
+涉及增删改的问题 初始化这时候也不太一样了，需要根据意义分析一下，比如说一个串要删除到空串，需要将全部字符删除等等。
+- [LC #47.判断子序列](./is_subsequence.cpp)：编辑距离入门，可以用DP解决，也可以用双指针解决。
+- [LC #115.不同的子序列](./distinct_subsequences.cpp)
+- [LC #583.两个字符串的删除操作](delete_operation_for_two_strings.cpp): 两个字符串都可以任意删除，状态转移方程在字符不相等的时候就是两种类别！
+- [LC #72.编辑距离](./edit_distance.cpp): 两个字符串的编辑距离，可以增删改，状态转移方程也是根据字符是否相等来分类讨论的。
+在不相等的时候，有三种操作: 增删改，所以状态转移方程也是三种情况的最小值。
+
