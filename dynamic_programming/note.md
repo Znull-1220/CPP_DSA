@@ -94,7 +94,15 @@ dp[i][j] = dp[i - 1][j] + dp[i][j - weight[i]]
 - [LC #337.打家劫舍III](./house_robber_iii.cpp): 树形DP 暴力递归和DP两种解法 其实DP解法挺简单直接的，只需要一个二维数组dp[i][2]表示当前节点取或者不取的最大值即可。
 注意是后序遍历，因为需要返回值来判断到底偷还是不偷当前节点。
 ### 股票问题
+股票问题基本思路：分析每一天可能出现的状态，dp数组为每一天开相同的状态数，所以最基本的就是要分清有多少种状态：最简单的就是第$i$天持有或不持有
+- [LC #121.买卖股票的最佳时机](best_time_to_buy_and_sell_stock.cpp)
+- [LC #122.买卖股票的最佳时机II](best_time_to_buy_and_sell_stock_ii.cpp): 可以多次买卖，那么每次购入时要加上之前卖出的利润进行状态转移；
+- [LC #123.买卖股票的最佳时机III](best_time_to_buy_and_sell_stock_iii.cpp): 最多可以买卖两次—>四种状态(买入1，卖出1，买入2，卖出2)
+- [LC #188.买卖股票的最佳时机IV](best_time_to_buy_and_sell_stock_iv.cpp): 延续上一题，最多可以买卖k次，那么就有2k种状态；但是为了for-loop递推方便，可以增加一个0状态，即什么操作都不做
+- [LC #309.最佳买卖股票时机含冷冻期](best_time_to_buy_and_sell_stock_with_cooldown.cpp)
+- [LC #714.买卖股票的最佳时机含手续费](best_time_to_buy_and_sell_stock_with_transaction_fee.cpp)
 
+只要画出状态机，然后根据状态机写出状态转移方程，就可以解决这类问题。以及初始化时要根据状态对应的意义初始dp[0][j].
 ### 子序列问题
 子序列问题一般最好用dp[i][j]去表示两个字符串的第i - 1和第j - 1个字符结尾的子序列，这样可以避免初始化，代码实现简单。
 - [LC #300.最长递增子序列](./longest_increasing_subsequence.cpp)
