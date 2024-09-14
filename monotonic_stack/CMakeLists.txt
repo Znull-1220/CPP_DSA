@@ -1,0 +1,5 @@
+add_executable(daily_temperatures daily_temperatures.cpp)
+add_executable(next_greater_element_i next_greater_element_i.cpp)
+add_executable(next_greater_element_ii next_greater_element_ii.cpp)
+add_executable(trapping_rain_water trapping_rain_water.cpp)
+add_executable(largest_rectangle_in_histogram largest_rectangle_in_histogram.cpp)

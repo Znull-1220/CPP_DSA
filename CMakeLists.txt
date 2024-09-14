@@ -12,5 +12,6 @@ add_subdirectory(dynamic_programming)
 add_subdirectory(backtracking)
 add_subdirectory(greedy_algorithm)
 add_subdirectory(graph_theory)
+add_subdirectory(monotonic_stack)
 
 add_subdirectory(REAL-QUESTIONS)
