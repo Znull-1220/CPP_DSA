@@ -1,0 +1,8 @@
+add_executable(queue_using_stack queue_using_stack.cpp)
+add_executable(stack_using_queue stack_using_queue.cpp)
+add_executable(simplify_path simplify_path.cpp)
+add_executable(valid_parentheses valid_parentheses.cpp)
+add_executable(remove_all_adjacent_duplicates_in_string remove_all_adjacent_duplicates_in_string.cpp)
+add_executable(evaluate_reverse_polish_notation evaluate_reverse_polish_notation.cpp)
+add_executable(sliding_window_maximum sliding_window_maximum.cpp)
+add_executable(top_k_frequent_elements top_k_frequent_elements.cpp)
