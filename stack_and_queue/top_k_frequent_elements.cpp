@@ -35,8 +35,8 @@ public:
         // std::priority_queue<type, container, comparison> pri_que;
         // 容器默认是vector, comparison默认是less<type> 大顶堆 容器一般是vector或deque
         priority_queue<pair<int, int>, vector<pair<int, int>>, comparison> pri_que;
-        for(auto it = umap.begin(); it != umap.end(); it++) {
-            pri_que.push(*it);
+        for(auto & it : umap) {
+            pri_que.push(it);
             if(pri_que.size() > k)      pri_que.pop();
         }
 
