@@ -1,0 +1,2 @@
+add_executable(next_permutation next_permutation.cpp)
+add_executable(lexicographical_numbers lexicographical_numbers.cpp)

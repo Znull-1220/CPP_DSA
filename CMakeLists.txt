@@ -14,5 +14,6 @@ add_subdirectory(backtracking)
 add_subdirectory(greedy_algorithm)
 add_subdirectory(graph_theory)
 add_subdirectory(monotonic_stack)
+add_subdirectory(simulation)
 
 add_subdirectory(REAL-QUESTIONS)
